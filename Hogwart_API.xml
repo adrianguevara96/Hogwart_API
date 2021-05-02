@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hogwart_API</name>
+    </assembly>
+    <members>
+        <member name="M:Hogwart_API.Controllers.RequestsController.GetRequest">
+            <summary>
+            Get all request.
+            </summary>
+        </member>
+        <member name="M:Hogwart_API.Controllers.RequestsController.GetRequest(System.Int32)">
+            <summary>
+            Get a specific request.
+            </summary>
+        </member>
+        <member name="M:Hogwart_API.Controllers.RequestsController.PutRequest(System.Int32,Hogwart_API.Models.Request)">
+             <summary>
+             Edit a request.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Requests/{id}
+                 {
+                    "id": "1"
+                    "name": "Student",
+                    "lastname": "Two",
+                    "identification": 123456789,
+                    "age": 2,
+                    "house": "Slytherin"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Hogwart_API.Controllers.RequestsController.PostRequest(Hogwart_API.Models.Request)">
+             <summary>
+             Creates a request.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Requests
+                 {
+                    "name": "Student",
+                    "lastname": "One",
+                    "identification": 123456789,
+                    "age": 1,
+                    "house": "Gryffindor"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:Hogwart_API.Controllers.RequestsController.DeleteRequest(System.Int32)">
+            <summary>
+            Deletes a specific request.
+            </summary>
+            <param name="id"></param> 
+        </member>
+    </members>
+</doc>
